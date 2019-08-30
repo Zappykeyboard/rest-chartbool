@@ -12,9 +12,19 @@
 .container {
 
   width: 100vw;
-  height: 100vh;
+  
 
   padding: 50px 25px;
 
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-container{
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid black;
 }
