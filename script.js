@@ -83,11 +83,8 @@ function getSalesByEmployee(data){
     var d = data[i];
     if (!employeeSales[d.salesman]){
       employeeSales[d.salesman] = 0;
-      employeeSales[d.salesman] += Number(d.amount);
-    } else {
-      employeeSales[d.salesman] += Number(d.amount);
     }
-
+    employeeSales[d.salesman] += Number(d.amount);
   }
   return employeeSales;
 }
