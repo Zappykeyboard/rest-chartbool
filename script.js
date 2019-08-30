@@ -7,7 +7,7 @@ function init() {
 
 $(document).ready(init);
 
-
+//aggiungo
 function addSale(){
 
   //recupero i dati dal form
@@ -38,7 +38,7 @@ function fillEmployeeOptions(employees){
   
   var optionHtml = $("#employee-template").html();
   var optionTemplate = Handlebars.compile(optionHtml);
-  
+  $("#employee-select").empty();
   for (var i = 0; i < employees.length; i++){
 
   var context = {
@@ -106,7 +106,7 @@ function getSalesByMonth(data){
   return months;
 }
 
-
+//recupero dati dal server
 function getData(){
  
 
@@ -127,6 +127,7 @@ function getData(){
       //disegno le chart
       drawLineChart(salesByMonth);
       drawPieChart(salesByEmployee);
+      
     },
     error: function(){
       console.log("error");
